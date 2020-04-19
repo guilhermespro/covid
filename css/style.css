@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* header start */
+
+header {
+  text-align: center;
+  /* border: 2px solid #ccc; */
+  /* box-shadow: eixo-x eixo-y blur cor */
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+nav li {
+  display: inline-block;
+  padding: 10px 20px;
+  /* border: 2px solid black; */
+}
+
+nav li a {
+  text-decoration: none;
+  color: #555;
+}
+
+nav li a.active {
+  font-weight: 700;
+  color: orangered;
+}
+
+header h1 {
+  text-transform: uppercase;
+}
+
+/* header end */
+
+/* footer start */
+
+footer {
+  background-color: #f2f2f2;
+}
+
+footer p {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+/* footer end */
+
+/* banner home */
+
+section#banner {
+  background-image: url('../img/covid-19.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 73vh;
+  /* viewport height */
+}
+
+/* banner home end */
+
+/* about start */
+
+body main{
+  margin-top: 138px !important;
+}
+
+main#about, main#music, .contact{
+  text-align: center;
+  padding: 30px 0;
+}
+
+main#about h2 {
+  font-size: 30px;
+}
+
+main#about img {
+  width: 450px;
+}
+
+main#about p {
+  margin: 30px 0;
+  line-height: 35px;
+}
+
+main#about cite {
+  font-size: 22px;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* about end */
+/* music start */
+
+main#music {
+  width: 900px;
+  margin: 30px auto;
+}
+
+/* music end */
+
+/* contact end */
+
+main#contact {
+  width: 900px;
+  margin: 30px auto;
+}
+
+/* home v2 */
+section#news {
+  width: 900px;
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 40px 0;
+}
+
+section#news img {
+  width: 100%;
+}
+
+.duas-colunas {
+  overflow:  hidden;
+}
+
+.duas-colunas>div {
+  width: 50%;
+  float: left;
+}
+
+
+section#news ol li {
+  padding: 20px 0;
+}
+
+section#news ol li strong {
+  color: black;
+}
+
+section#concept{
+  width: 900px;
+  margin: 30px auto;
+}
+
+section#form-mapa iframe{
+  width: 100%;
+  height: 400px;
+  padding-left: 20px;
+  
+}
+
+form button{
+  background-color: orange;
+  color:white;
+  border: none;
+  padding: 5px 20px;
+}
+
+
+
+@media(max-width:600px){
+  #music{
+    padding: 15px;
+    font-size: 22px;
+  }
+  main h2{
+    text-align: center;
+  }
+  main#music{
+    width: 100%;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 25px;
+  }
+  main#music iframe{
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+  }
+  main, body #about{
+    padding: 15px;
+  }
+  #songs div{
+    width: 100%;
+  }
+  section#banner {
+    width: calc(100% + 30px) !important;
+    margin-left: -15px;
+  }
+  main#about img{
+    width: 100%;
+    height: auto;
+  }
+  main#contact{
+    width: 100%;
+    max-width: 100%;
+    
+  }
+  #form-mapa div{
+    width: 100%;
+  }
+  section#form-mapa iframe{
+    padding-left: 0;
+  }
+  main#contact{
+    margin-top: 0;
+  }
+
+  .form-group input,
+  .form-group textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  body .form-group input[type="radio"]{
+    width: initial;
+  }
+  .form-group div{
+    display: flex;
+    flex-direction: row;
+  }
+  .form-group div label{
+    align-self: center;
+  }
+
+  @media (max-width: 900px) {
+    section#concept,
+    section#songs{
+    padding: 0 40px;
+  
+    }
+
+  }
+
+  nav ul li{
+    font-size: 20px;
+    padding: 0;
+  }
+  #exp h2{
+    text-align: left;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+p {
+  font-size: 20px;
+  text-align: left;
+}
+
+@media(max-width: 768px) {
+  .duas-colunas>div{
+    width: 100%;
+  }
+
+  section#songs ul li {
+    font-size: 20px;
+  }
+
+  main#music iframe {
+     width: 100%;
+     
+
+  }
+  main#music ul li,
+  main#music p {
+    font-size: 24px;
+  }
+
+  main#contact{
+    
+    padding: 0 40px;
+  }
+  main#contact form,
+  main#contact form input,
+  main#contact form textarea{
+    font-size: 24px;
+  }
+
+  main#contact form .form-group{
+    margin-bottom: 20px;
+  }
+  
+ form button {
+    margin-bottom: 20px;
+    padding: 15px;
+    display: inline-block;
+  }
+
+ 
+}
